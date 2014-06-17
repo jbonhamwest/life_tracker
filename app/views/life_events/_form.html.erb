@@ -1,0 +1,25 @@
+<%= form_for(@life_event) do |f| %>
+  <% if @life_event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@life_event.errors.count, "error") %> prohibited this life_event from being saved:</h2>
+
+      <ul>
+      <% @life_event.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date_of_event %><br>
+    <%= f.number_field :date_of_event %>
+  </div>
+  <div class="field">
+    <%= f.label :event_name %><br>
+    <%= f.text_field :event_name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

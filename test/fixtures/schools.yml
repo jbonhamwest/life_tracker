@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  year_started: 1
+  year_ended: 1
+  school_name: MyString
+
+two:
+  year_started: 1
+  year_ended: 1
+  school_name: MyString
