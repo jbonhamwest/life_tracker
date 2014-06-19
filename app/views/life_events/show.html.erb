@@ -10,5 +10,10 @@
   <%= @life_event.event_name %>
 </p>
 
+<p>
+  <strong>Event description:</strong>
+  <%= @life_event.description %>
+</p>
+
 <%= link_to 'Edit', edit_life_event_path(@life_event) %> |
 <%= link_to 'Back', life_events_path %>
