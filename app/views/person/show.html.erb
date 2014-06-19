@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Record Number:</strong>
+  <%= @people.people_id %><br>
+  <strong>Firstname: </strong>
+  <%= @people.first_name %><br>
+  <strong>Middle Initial:</strong>
+  <%= @people.middle_initial %><br>
+  <strong>Last Name:</strong>
+  <%= @people.last_name %><br>
+</p>
+
+<%= link_to 'Edit', edit_people_path(@people) %> |
+<%= link_to 'Back', peoples_path %>
